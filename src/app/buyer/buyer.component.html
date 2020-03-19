@@ -1,0 +1,35 @@
+<mat-form-field class="searchstyle" appearance="outline" *ngIf="outlet.isActivated == false"  >
+  <input type="text" placeholder="Search for location" matInput #local>
+ </mat-form-field><br>
+
+ <mat-icon class="mat-18 iconstyle" (click)="value(local.value)">search</mat-icon>
+ <p class="pstyle">Sort</p>
+ <mat-form-field class="sortsty">
+  <mat-select matNativeControl required>
+    <mat-option  (click)="select()">Price Low To High</mat-option>
+    <mat-option    (click)="select()">Price High TO Low</mat-option>
+  </mat-select>
+</mat-form-field>
+<div  *ngIf="outlet.isActivated == false" fxLayout="row wrap" class="container" fxLayout.xs="column"  fxLayoutGap="10px" fxLayoutAlign="space-around center"
+>
+  <mat-card  fxFlex="calc(10%-23px)" fxFlex.sm="calc(10%-23px)" class=" cursorsty style mat-elevation-z8" (click)="redirect(ele.id)">
+        <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column" ></mat-card-title>
+        <mat-card-content style="text-align: center;">
+        <img mat-card-image  class="img" src="../../assets/GR2-17645-185015_400_540.jpg" alt="">
+        </mat-card-content>
+        <p style="margin-top: 24px;">Good}</p>
+        <mat-divider></mat-divider>
+        <p class="sty"  matTooltip="Monthly Price">₹ 2222 <span style="color: #adb5bd">monthly</span></p>
+        </mat-card>
+
+  <mat-card  fxFlex="calc(10%-23px)" fxFlex.sm="calc(10%-23px)" class=" cursorsty style mat-elevation-z8"  (click)="redirect(ele.id)">
+    <mat-card-title fxLayout.gt-xs="row" fxLayout.xs="column" ></mat-card-title>
+    <mat-card-content style="text-align: center;">
+    <img mat-card-image  class="img" src="../../assets/pg.jpg" alt="">
+    </mat-card-content>
+    <p style="margin-top: 24px;">accha</p>
+    <mat-divider></mat-divider>
+    <p class="sty"  matTooltip="Monthly Price">₹ 2000 <span style="color: #adb5bd">monthly</span></p>
+    </mat-card>
+</div>
+  <router-outlet #outlet="outlet"></router-outlet>

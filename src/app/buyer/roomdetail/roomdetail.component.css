@@ -1,0 +1,27 @@
+.imgsty{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.dvsty{
+  margin-top: 65px;position: relative;
+       top: 9px;
+    margin-bottom: 18px;
+}
+.spanstyle{
+  height: 2px;
+      background-color: #0093e4;
+      display: inline-block;
+      width: 50px;
+      margin-bottom: 20px;
+}
+li{
+  list-style: none;
+}
+.listyle{
+  color: #525f7f
+}
+.imgstyle{
+  width: 20px;
+  margin-right: 5px;
+}

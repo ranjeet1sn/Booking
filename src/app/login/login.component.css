@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 20px;
+}
+.mat-dialog-container{
+  background: linear-gradient(45deg, #bb4d4d, transparent)
+}
+.eye{
+  cursor: pointer;
+  float: right;
+}
+.sty{
+  border-bottom: unset !important;padding: unset ;width: 70%
+}

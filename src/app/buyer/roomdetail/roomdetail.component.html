@@ -1,0 +1,60 @@
+<div fxLayout="row wrap" fxLayout.xs="column">
+<div class="container-fluid"
+class="dvsty" fxFlex="calc(25%-25px)" fxFlex.sm="calc(50%-25px)" fxFlex.md="calc(50%-25px)" fxLayoutAlign="center">
+  <div class="col-12" id="#top" fxLayout="column">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <img src="../../assets/room-clipart-paying-guest-2.jpg" alt="image"
+        class="imgsty">
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="../../assets/IMG_6541.JPG" alt="image"
+        class="imgsty">
+      </ng-template>
+    </ngb-carousel>
+
+    <mat-card  >
+      <mat-card-title style="color: #32325d">Amenities</mat-card-title>
+      <span class="spanstyle"></span>
+      <mat-card-content >
+        <div class="row">
+        <div class="listyle col-md-6 col-6 mt-1" >
+          <img class="imgstyle" src="https://d2bxpw04qb5rhq.cloudfront.net/production/master_property_free_amenity/icon/12/1f45f4eb7ef48bb7c4a751e890fdedda79b1065b91035e6a2b7502ac9e19fbcd9e8e76967ef81b8b/marker_news.png">
+          <span>Newspaper</span></div>
+        <div class="listyle col-md-6 col-6 mt-1">
+          <img class="imgstyle" src="https://d2bxpw04qb5rhq.cloudfront.net/production/master_property_free_amenity/icon/15/3cd357239f0eddf70fa16625291e0ec3955de8e8d22813875891cb4d07504585dbf5781b4af8d3fd/marker_2-wheeler.png">
+            <span>2 Wheeler Parking</span></div>
+            <div class="listyle col-md-6 col-6 mt-1">
+              <img class="imgstyle" src="https://d2bxpw04qb5rhq.cloudfront.net/production/master_property_free_amenity/icon/4/ec2861584825d2d34b663ccccf102f7ffa95e8eca3d4723a6b4359b3458da1f844858a490a24bb29/marker_non_veg.png">
+                <span>Non Vegetarian</span></div>
+                <div class="listyle col-md-6 col-6 mt-1">
+                  <img class="imgstyle" src="https://d2bxpw04qb5rhq.cloudfront.net/production/master_property_free_amenity/icon/16/fd09b10082ca5c759fda90158e32b4815026a75150138477bec5a37e03b3b23f82068551e1d2670a/marker_power.png">
+                    <span>Power Backup</span></div>
+      </div>
+      <mat-card-title style="  color: #32325d;
+      margin-top: 13px;">Description</mat-card-title>
+      <span class="spanstyle">{{product}}</span>
+      </mat-card-content>
+      </mat-card>
+
+  </div>
+
+</div>
+
+<div fxFlex="calc(25%-25px)" fxFlex.sm="calc(50%-25px)" fxFlex.md="calc(50%-20px)">
+  <mat-card style="margin-top: 74px;">
+    <mat-card-title>Price Details</mat-card-title>
+    <mat-divider></mat-divider>
+    <mat-card-content>
+      <p class="parstyle">Items <b class="bstyle">{{cou}}</b> </p>
+      <p class="parstyle">Delivery Fee <b class="bstyle" style="color: #388e3c;position: relative;">{{discount}}</b>
+      </p>
+      <mat-divider></mat-divider>
+      <p class="parstyle" style="font-weight: 500;">Total Payable
+        <b class="bstyle">₹{{price}}</b> </p>
+    </mat-card-content>
+  </mat-card>
+  <router-outlet></router-outlet>
+</div>
+</div>
+
